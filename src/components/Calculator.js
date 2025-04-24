@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import styles from './Calculator.module.css';
 import calculate from '../logic/calculate';
 
 const Calculator = () => {
@@ -17,8 +16,11 @@ const Calculator = () => {
   const result = next || total || '0';
 
   return (
-    <div className={styles.container}>
-      <table className={styles}>
+    <div className="calculator">
+      <p>
+        Let&apos;s  do some math!
+      </p>
+      <table>
         <tbody>
           <tr>
             <td colSpan={4}>
